@@ -36,7 +36,7 @@ const App = () => {
         connectedContract.on("NewEpicNFTMinted", (from, tokenId) => {
           console.log(from, tokenId.toNumber());
           alert(
-            `あなたのウォレットに NFT を送信しました。OpenSea に表示されるまで最大で10分かかることがあります。NFT へのリンクはこちらです: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`
+            `あなたのウォレットに NFT を送信しました。OpenSea に表示されるまで最大で10分かかることがあります。NFT へのリンクはこちらです: https://testnets.opensea.io/assets/goerli/${CONTRACT_ADDRESS}/${tokenId.toNumber()}`
           );
         });
         console.log("Setup event listener!");
